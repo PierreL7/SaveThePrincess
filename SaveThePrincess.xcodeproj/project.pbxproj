@@ -1,0 +1,951 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B207BC633222D3DB3D4E20E /* Pods_SaveThePrincess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99284728FE9979422E8E8D42 /* Pods_SaveThePrincess.framework */; };
+		7F02070720E9053E00BDDD72 /* Breathe_Fire.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7F02070620E9021500BDDD72 /* Breathe_Fire.otf */; };
+		7F0EB10D20D57B8E00FD116C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F0EB10C20D57B8E00FD116C /* LaunchScreen.storyboard */; };
+		7F0EB11220D59C3400FD116C /* mainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0EB11120D59C3400FD116C /* mainPageView.swift */; };
+		7F0EB11520D5A67100FD116C /* BlinkingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0EB11420D5A67100FD116C /* BlinkingLabel.swift */; };
+		7F2D5F3E20D3E52700AE0635 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2D5F3D20D3E52700AE0635 /* AppDelegate.swift */; };
+		7F2D5F4020D3E52700AE0635 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2D5F3F20D3E52700AE0635 /* ViewController.swift */; };
+		7F2D5F4320D3E52700AE0635 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F2D5F4120D3E52700AE0635 /* Main.storyboard */; };
+		7F2D5F4620D3E52700AE0635 /* SaveThePrincess.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F2D5F4420D3E52700AE0635 /* SaveThePrincess.xcdatamodeld */; };
+		7F2D5F4820D3E52900AE0635 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F2D5F4720D3E52900AE0635 /* Assets.xcassets */; };
+		7F2D5F5620D3E52900AE0635 /* SaveThePrincessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2D5F5520D3E52900AE0635 /* SaveThePrincessTests.swift */; };
+		7F2D5F6120D3E52900AE0635 /* SaveThePrincessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2D5F6020D3E52900AE0635 /* SaveThePrincessUITests.swift */; };
+		7F4777CE20E9087A00AC90DD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F4777CD20E9087900AC90DD /* GoogleService-Info.plist */; };
+		7F4A7E2D20DD438100B763EF /* gameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A7E2C20DD438100B763EF /* gameViewController.swift */; };
+		7F4A7E2F20DD476A00B763EF /* addSoldierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A7E2E20DD476A00B763EF /* addSoldierViewController.swift */; };
+		7F4A7E3120DD47AA00B763EF /* addSoldierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A7E3020DD47AA00B763EF /* addSoldierView.swift */; };
+		7F55AFDF20DFD359007DF7BD /* DropDownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F55AFDE20DFD359007DF7BD /* DropDownButton.swift */; };
+		7F55BEB120E1496700EA30A1 /* attackDoorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F55BEB020E1496700EA30A1 /* attackDoorViewController.swift */; };
+		7F55BEB320E1497A00EA30A1 /* attackDoorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F55BEB220E1497A00EA30A1 /* attackDoorView.swift */; };
+		7F6F9F1620E009EE009FF509 /* Soldier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6F9F1520E009EE009FF509 /* Soldier.swift */; };
+		7F6F9F1820E02F33009FF509 /* SoldierListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6F9F1720E02F33009FF509 /* SoldierListViewController.swift */; };
+		7F6F9F1A20E02F7D009FF509 /* SoldierListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6F9F1920E02F7D009FF509 /* SoldierListView.swift */; };
+		7F6F9F1C20E03112009FF509 /* soldierInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6F9F1B20E03112009FF509 /* soldierInfoTableViewCell.swift */; };
+		7F95631220E3E10700B9FC5A /* surpriseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F95631120E3E10700B9FC5A /* surpriseViewController.swift */; };
+		7FA8BD3420E274BD0067A640 /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA8BD3320E274BD0067A640 /* DataHandler.swift */; };
+		7FA8BD4020E2D2650067A640 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA8BD3F20E2D2650067A640 /* loginViewController.swift */; };
+		7FA8BD4220E2D27F0067A640 /* loginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA8BD4120E2D27F0067A640 /* loginView.swift */; };
+		7FA8BD4420E315230067A640 /* endGameTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA8BD4320E315230067A640 /* endGameTextViewController.swift */; };
+		7FA8BD4620E315430067A640 /* endGameTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA8BD4520E315430067A640 /* endGameTextView.swift */; };
+		7FCC8E3920DBEEA100092C96 /* gameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCC8E3820DBEEA100092C96 /* gameView.swift */; };
+		7FDCA31C20D81745000CFF9F /* openningTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDCA31B20D81745000CFF9F /* openningTextView.swift */; };
+		7FF3EF8B20D804100098E8E1 /* storyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF3EF8A20D804100098E8E1 /* storyViewController.swift */; };
+		A1922529A2557E19B8FB194C /* Pods_SaveThePrincessUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F848D13292FFBF658911E22 /* Pods_SaveThePrincessUITests.framework */; };
+		E9DD997D695E645D11AFFC5D /* Pods_SaveThePrincessTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756B4965EDB400DD1962F002 /* Pods_SaveThePrincessTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F2D5F5220D3E52900AE0635 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F2D5F3220D3E52700AE0635 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F2D5F3920D3E52700AE0635;
+			remoteInfo = SaveThePrincess;
+		};
+		7F2D5F5D20D3E52900AE0635 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F2D5F3220D3E52700AE0635 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F2D5F3920D3E52700AE0635;
+			remoteInfo = SaveThePrincess;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C7DC4324698892A395DDE70 /* Pods-SaveThePrincessTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaveThePrincessTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SaveThePrincessTests/Pods-SaveThePrincessTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F848D13292FFBF658911E22 /* Pods_SaveThePrincessUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaveThePrincessUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		756B4965EDB400DD1962F002 /* Pods_SaveThePrincessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaveThePrincessTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E9AA4D92D85B9719D59ACA9 /* Pods-SaveThePrincessUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaveThePrincessUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SaveThePrincessUITests/Pods-SaveThePrincessUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7F02070620E9021500BDDD72 /* Breathe_Fire.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Breathe_Fire.otf; sourceTree = "<group>"; };
+		7F0EB10C20D57B8E00FD116C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7F0EB11120D59C3400FD116C /* mainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainPageView.swift; sourceTree = "<group>"; };
+		7F0EB11420D5A67100FD116C /* BlinkingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkingLabel.swift; sourceTree = "<group>"; };
+		7F2D5F3A20D3E52700AE0635 /* SaveThePrincess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaveThePrincess.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F2D5F3D20D3E52700AE0635 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7F2D5F3F20D3E52700AE0635 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7F2D5F4220D3E52700AE0635 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7F2D5F4520D3E52700AE0635 /* SaveThePrincess.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SaveThePrincess.xcdatamodel; sourceTree = "<group>"; };
+		7F2D5F4720D3E52900AE0635 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F2D5F4C20D3E52900AE0635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F2D5F5120D3E52900AE0635 /* SaveThePrincessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaveThePrincessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F2D5F5520D3E52900AE0635 /* SaveThePrincessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveThePrincessTests.swift; sourceTree = "<group>"; };
+		7F2D5F5720D3E52900AE0635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F2D5F5C20D3E52900AE0635 /* SaveThePrincessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaveThePrincessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F2D5F6020D3E52900AE0635 /* SaveThePrincessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveThePrincessUITests.swift; sourceTree = "<group>"; };
+		7F2D5F6220D3E52900AE0635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F4777CD20E9087900AC90DD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7F4A7E2C20DD438100B763EF /* gameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameViewController.swift; sourceTree = "<group>"; };
+		7F4A7E2E20DD476A00B763EF /* addSoldierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addSoldierViewController.swift; sourceTree = "<group>"; };
+		7F4A7E3020DD47AA00B763EF /* addSoldierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addSoldierView.swift; sourceTree = "<group>"; };
+		7F55AFDE20DFD359007DF7BD /* DropDownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownButton.swift; sourceTree = "<group>"; };
+		7F55BEB020E1496700EA30A1 /* attackDoorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = attackDoorViewController.swift; sourceTree = "<group>"; };
+		7F55BEB220E1497A00EA30A1 /* attackDoorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = attackDoorView.swift; sourceTree = "<group>"; };
+		7F6F9F1520E009EE009FF509 /* Soldier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Soldier.swift; sourceTree = "<group>"; };
+		7F6F9F1720E02F33009FF509 /* SoldierListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoldierListViewController.swift; sourceTree = "<group>"; };
+		7F6F9F1920E02F7D009FF509 /* SoldierListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoldierListView.swift; sourceTree = "<group>"; };
+		7F6F9F1B20E03112009FF509 /* soldierInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soldierInfoTableViewCell.swift; sourceTree = "<group>"; };
+		7F95631120E3E10700B9FC5A /* surpriseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = surpriseViewController.swift; sourceTree = "<group>"; };
+		7FA8BD3320E274BD0067A640 /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
+		7FA8BD3F20E2D2650067A640 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		7FA8BD4120E2D27F0067A640 /* loginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
+		7FA8BD4320E315230067A640 /* endGameTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = endGameTextViewController.swift; sourceTree = "<group>"; };
+		7FA8BD4520E315430067A640 /* endGameTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = endGameTextView.swift; sourceTree = "<group>"; };
+		7FCC8E3820DBEEA100092C96 /* gameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameView.swift; sourceTree = "<group>"; };
+		7FDCA31B20D81745000CFF9F /* openningTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openningTextView.swift; sourceTree = "<group>"; };
+		7FF3EF8A20D804100098E8E1 /* storyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storyViewController.swift; sourceTree = "<group>"; };
+		83FBC993B7A2EC05C702BD51 /* Pods-SaveThePrincess.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaveThePrincess.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SaveThePrincess/Pods-SaveThePrincess.debug.xcconfig"; sourceTree = "<group>"; };
+		90C62317F1ED1C8BB2AED29A /* Pods-SaveThePrincess.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaveThePrincess.release.xcconfig"; path = "Pods/Target Support Files/Pods-SaveThePrincess/Pods-SaveThePrincess.release.xcconfig"; sourceTree = "<group>"; };
+		9155D59E0969B04183B72BFB /* Pods-SaveThePrincessTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaveThePrincessTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SaveThePrincessTests/Pods-SaveThePrincessTests.release.xcconfig"; sourceTree = "<group>"; };
+		99284728FE9979422E8E8D42 /* Pods_SaveThePrincess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaveThePrincess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E00CCED2CF795A818777BE8B /* Pods-SaveThePrincessUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaveThePrincessUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SaveThePrincessUITests/Pods-SaveThePrincessUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F2D5F3720D3E52700AE0635 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B207BC633222D3DB3D4E20E /* Pods_SaveThePrincess.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F2D5F4E20D3E52900AE0635 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9DD997D695E645D11AFFC5D /* Pods_SaveThePrincessTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F2D5F5920D3E52900AE0635 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1922529A2557E19B8FB194C /* Pods_SaveThePrincessUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3ABC252B5B4DB2A5B1B72284 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99284728FE9979422E8E8D42 /* Pods_SaveThePrincess.framework */,
+				756B4965EDB400DD1962F002 /* Pods_SaveThePrincessTests.framework */,
+				5F848D13292FFBF658911E22 /* Pods_SaveThePrincessUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4471A6285BCD823CAF6D3082 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83FBC993B7A2EC05C702BD51 /* Pods-SaveThePrincess.debug.xcconfig */,
+				90C62317F1ED1C8BB2AED29A /* Pods-SaveThePrincess.release.xcconfig */,
+				3C7DC4324698892A395DDE70 /* Pods-SaveThePrincessTests.debug.xcconfig */,
+				9155D59E0969B04183B72BFB /* Pods-SaveThePrincessTests.release.xcconfig */,
+				E00CCED2CF795A818777BE8B /* Pods-SaveThePrincessUITests.debug.xcconfig */,
+				7E9AA4D92D85B9719D59ACA9 /* Pods-SaveThePrincessUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7F0EB10720D566FC00FD116C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7F02070620E9021500BDDD72 /* Breathe_Fire.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7F0EB10E20D5877000FD116C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7F0EB11120D59C3400FD116C /* mainPageView.swift */,
+				7FDCA31B20D81745000CFF9F /* openningTextView.swift */,
+				7FCC8E3820DBEEA100092C96 /* gameView.swift */,
+				7F4A7E3020DD47AA00B763EF /* addSoldierView.swift */,
+				7F6F9F1920E02F7D009FF509 /* SoldierListView.swift */,
+				7F6F9F1B20E03112009FF509 /* soldierInfoTableViewCell.swift */,
+				7F55BEB220E1497A00EA30A1 /* attackDoorView.swift */,
+				7FA8BD4120E2D27F0067A640 /* loginView.swift */,
+				7FA8BD4520E315430067A640 /* endGameTextView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7F0EB10F20D5877600FD116C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7F2D5F3F20D3E52700AE0635 /* ViewController.swift */,
+				7FF3EF8A20D804100098E8E1 /* storyViewController.swift */,
+				7F4A7E2C20DD438100B763EF /* gameViewController.swift */,
+				7F4A7E2E20DD476A00B763EF /* addSoldierViewController.swift */,
+				7F6F9F1720E02F33009FF509 /* SoldierListViewController.swift */,
+				7F55BEB020E1496700EA30A1 /* attackDoorViewController.swift */,
+				7FA8BD3F20E2D2650067A640 /* loginViewController.swift */,
+				7FA8BD4320E315230067A640 /* endGameTextViewController.swift */,
+				7F95631120E3E10700B9FC5A /* surpriseViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7F0EB11020D5877D00FD116C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7F6F9F1520E009EE009FF509 /* Soldier.swift */,
+				7FA8BD3320E274BD0067A640 /* DataHandler.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7F0EB11320D5A65100FD116C /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				7F0EB11420D5A67100FD116C /* BlinkingLabel.swift */,
+				7F55AFDE20DFD359007DF7BD /* DropDownButton.swift */,
+			);
+			path = Subclasses;
+			sourceTree = "<group>";
+		};
+		7F2D5F3120D3E52700AE0635 = {
+			isa = PBXGroup;
+			children = (
+				7F2D5F3C20D3E52700AE0635 /* SaveThePrincess */,
+				7F2D5F5420D3E52900AE0635 /* SaveThePrincessTests */,
+				7F2D5F5F20D3E52900AE0635 /* SaveThePrincessUITests */,
+				7F2D5F3B20D3E52700AE0635 /* Products */,
+				4471A6285BCD823CAF6D3082 /* Pods */,
+				3ABC252B5B4DB2A5B1B72284 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7F2D5F3B20D3E52700AE0635 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F2D5F3A20D3E52700AE0635 /* SaveThePrincess.app */,
+				7F2D5F5120D3E52900AE0635 /* SaveThePrincessTests.xctest */,
+				7F2D5F5C20D3E52900AE0635 /* SaveThePrincessUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F2D5F3C20D3E52700AE0635 /* SaveThePrincess */ = {
+			isa = PBXGroup;
+			children = (
+				7F0EB11320D5A65100FD116C /* Subclasses */,
+				7F0EB11020D5877D00FD116C /* Models */,
+				7F0EB10F20D5877600FD116C /* Controllers */,
+				7F0EB10E20D5877000FD116C /* Views */,
+				7F0EB10720D566FC00FD116C /* Fonts */,
+				7F2D5F3D20D3E52700AE0635 /* AppDelegate.swift */,
+				7F4777CD20E9087900AC90DD /* GoogleService-Info.plist */,
+				7F2D5F4120D3E52700AE0635 /* Main.storyboard */,
+				7F2D5F4720D3E52900AE0635 /* Assets.xcassets */,
+				7F2D5F4C20D3E52900AE0635 /* Info.plist */,
+				7F2D5F4420D3E52700AE0635 /* SaveThePrincess.xcdatamodeld */,
+				7F0EB10C20D57B8E00FD116C /* LaunchScreen.storyboard */,
+			);
+			path = SaveThePrincess;
+			sourceTree = "<group>";
+		};
+		7F2D5F5420D3E52900AE0635 /* SaveThePrincessTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F2D5F5520D3E52900AE0635 /* SaveThePrincessTests.swift */,
+				7F2D5F5720D3E52900AE0635 /* Info.plist */,
+			);
+			path = SaveThePrincessTests;
+			sourceTree = "<group>";
+		};
+		7F2D5F5F20D3E52900AE0635 /* SaveThePrincessUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7F2D5F6020D3E52900AE0635 /* SaveThePrincessUITests.swift */,
+				7F2D5F6220D3E52900AE0635 /* Info.plist */,
+			);
+			path = SaveThePrincessUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F2D5F3920D3E52700AE0635 /* SaveThePrincess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F2D5F6520D3E52900AE0635 /* Build configuration list for PBXNativeTarget "SaveThePrincess" */;
+			buildPhases = (
+				D61EEFBB21E743624C26E4D4 /* [CP] Check Pods Manifest.lock */,
+				7F2D5F3620D3E52700AE0635 /* Sources */,
+				7F2D5F3720D3E52700AE0635 /* Frameworks */,
+				7F2D5F3820D3E52700AE0635 /* Resources */,
+				66EBFB791B0FE7EC3412AD9C /* [CP] Embed Pods Frameworks */,
+				BBC987D9DF0BD60566B366A4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SaveThePrincess;
+			productName = SaveThePrincess;
+			productReference = 7F2D5F3A20D3E52700AE0635 /* SaveThePrincess.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F2D5F5020D3E52900AE0635 /* SaveThePrincessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F2D5F6820D3E52900AE0635 /* Build configuration list for PBXNativeTarget "SaveThePrincessTests" */;
+			buildPhases = (
+				8FABD2FEB2EBADD64EE64E02 /* [CP] Check Pods Manifest.lock */,
+				7F2D5F4D20D3E52900AE0635 /* Sources */,
+				7F2D5F4E20D3E52900AE0635 /* Frameworks */,
+				7F2D5F4F20D3E52900AE0635 /* Resources */,
+				EF39F13188ED412F5D9D817B /* [CP] Embed Pods Frameworks */,
+				B4716A87B9C288689AD447A2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F2D5F5320D3E52900AE0635 /* PBXTargetDependency */,
+			);
+			name = SaveThePrincessTests;
+			productName = SaveThePrincessTests;
+			productReference = 7F2D5F5120D3E52900AE0635 /* SaveThePrincessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7F2D5F5B20D3E52900AE0635 /* SaveThePrincessUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F2D5F6B20D3E52900AE0635 /* Build configuration list for PBXNativeTarget "SaveThePrincessUITests" */;
+			buildPhases = (
+				F3BE694A708ED1091D0AC7E9 /* [CP] Check Pods Manifest.lock */,
+				7F2D5F5820D3E52900AE0635 /* Sources */,
+				7F2D5F5920D3E52900AE0635 /* Frameworks */,
+				7F2D5F5A20D3E52900AE0635 /* Resources */,
+				B5A7F9E5455C18E1ADE9A0B4 /* [CP] Embed Pods Frameworks */,
+				FD39B25AAC1AAD0542F8657D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F2D5F5E20D3E52900AE0635 /* PBXTargetDependency */,
+			);
+			name = SaveThePrincessUITests;
+			productName = SaveThePrincessUITests;
+			productReference = 7F2D5F5C20D3E52900AE0635 /* SaveThePrincessUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F2D5F3220D3E52700AE0635 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Pierre Lefebvre";
+				TargetAttributes = {
+					7F2D5F3920D3E52700AE0635 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					7F2D5F5020D3E52900AE0635 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 7F2D5F3920D3E52700AE0635;
+					};
+					7F2D5F5B20D3E52900AE0635 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 7F2D5F3920D3E52700AE0635;
+					};
+				};
+			};
+			buildConfigurationList = 7F2D5F3520D3E52700AE0635 /* Build configuration list for PBXProject "SaveThePrincess" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F2D5F3120D3E52700AE0635;
+			productRefGroup = 7F2D5F3B20D3E52700AE0635 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F2D5F3920D3E52700AE0635 /* SaveThePrincess */,
+				7F2D5F5020D3E52900AE0635 /* SaveThePrincessTests */,
+				7F2D5F5B20D3E52900AE0635 /* SaveThePrincessUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F2D5F3820D3E52700AE0635 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F02070720E9053E00BDDD72 /* Breathe_Fire.otf in Resources */,
+				7F0EB10D20D57B8E00FD116C /* LaunchScreen.storyboard in Resources */,
+				7F4777CE20E9087A00AC90DD /* GoogleService-Info.plist in Resources */,
+				7F2D5F4820D3E52900AE0635 /* Assets.xcassets in Resources */,
+				7F2D5F4320D3E52700AE0635 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F2D5F4F20D3E52900AE0635 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F2D5F5A20D3E52900AE0635 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		66EBFB791B0FE7EC3412AD9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SaveThePrincess/Pods-SaveThePrincess-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AABlurAlertController/AABlurAlertController.framework",
+				"${BUILT_PRODUCTS_DIR}/ChromaColorPicker/ChromaColorPicker.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/HeartLoadingView/HeartLoadingView.framework",
+				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AABlurAlertController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChromaColorPicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HeartLoadingView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SaveThePrincess/Pods-SaveThePrincess-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FABD2FEB2EBADD64EE64E02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SaveThePrincessTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4716A87B9C288689AD447A2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SaveThePrincessTests/Pods-SaveThePrincessTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5A7F9E5455C18E1ADE9A0B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SaveThePrincessUITests/Pods-SaveThePrincessUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBC987D9DF0BD60566B366A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SaveThePrincess/Pods-SaveThePrincess-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D61EEFBB21E743624C26E4D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SaveThePrincess-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF39F13188ED412F5D9D817B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SaveThePrincessTests/Pods-SaveThePrincessTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3BE694A708ED1091D0AC7E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SaveThePrincessUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD39B25AAC1AAD0542F8657D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SaveThePrincessUITests/Pods-SaveThePrincessUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F2D5F3620D3E52700AE0635 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F55AFDF20DFD359007DF7BD /* DropDownButton.swift in Sources */,
+				7F4A7E2D20DD438100B763EF /* gameViewController.swift in Sources */,
+				7FF3EF8B20D804100098E8E1 /* storyViewController.swift in Sources */,
+				7F6F9F1620E009EE009FF509 /* Soldier.swift in Sources */,
+				7F4A7E3120DD47AA00B763EF /* addSoldierView.swift in Sources */,
+				7F6F9F1A20E02F7D009FF509 /* SoldierListView.swift in Sources */,
+				7F2D5F4620D3E52700AE0635 /* SaveThePrincess.xcdatamodeld in Sources */,
+				7FA8BD4620E315430067A640 /* endGameTextView.swift in Sources */,
+				7FA8BD3420E274BD0067A640 /* DataHandler.swift in Sources */,
+				7F0EB11520D5A67100FD116C /* BlinkingLabel.swift in Sources */,
+				7FA8BD4220E2D27F0067A640 /* loginView.swift in Sources */,
+				7F2D5F4020D3E52700AE0635 /* ViewController.swift in Sources */,
+				7FA8BD4020E2D2650067A640 /* loginViewController.swift in Sources */,
+				7F0EB11220D59C3400FD116C /* mainPageView.swift in Sources */,
+				7F55BEB320E1497A00EA30A1 /* attackDoorView.swift in Sources */,
+				7F6F9F1C20E03112009FF509 /* soldierInfoTableViewCell.swift in Sources */,
+				7FDCA31C20D81745000CFF9F /* openningTextView.swift in Sources */,
+				7F4A7E2F20DD476A00B763EF /* addSoldierViewController.swift in Sources */,
+				7FCC8E3920DBEEA100092C96 /* gameView.swift in Sources */,
+				7F95631220E3E10700B9FC5A /* surpriseViewController.swift in Sources */,
+				7F2D5F3E20D3E52700AE0635 /* AppDelegate.swift in Sources */,
+				7F6F9F1820E02F33009FF509 /* SoldierListViewController.swift in Sources */,
+				7F55BEB120E1496700EA30A1 /* attackDoorViewController.swift in Sources */,
+				7FA8BD4420E315230067A640 /* endGameTextViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F2D5F4D20D3E52900AE0635 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F2D5F5620D3E52900AE0635 /* SaveThePrincessTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F2D5F5820D3E52900AE0635 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F2D5F6120D3E52900AE0635 /* SaveThePrincessUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F2D5F5320D3E52900AE0635 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F2D5F3920D3E52700AE0635 /* SaveThePrincess */;
+			targetProxy = 7F2D5F5220D3E52900AE0635 /* PBXContainerItemProxy */;
+		};
+		7F2D5F5E20D3E52900AE0635 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F2D5F3920D3E52700AE0635 /* SaveThePrincess */;
+			targetProxy = 7F2D5F5D20D3E52900AE0635 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7F2D5F4120D3E52700AE0635 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F2D5F4220D3E52700AE0635 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F2D5F6320D3E52900AE0635 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7F2D5F6420D3E52900AE0635 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F2D5F6620D3E52900AE0635 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83FBC993B7A2EC05C702BD51 /* Pods-SaveThePrincess.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NA7Q8886Q6;
+				INFOPLIST_FILE = SaveThePrincess/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Pierre-L7.SaveThePrincess";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F2D5F6720D3E52900AE0635 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90C62317F1ED1C8BB2AED29A /* Pods-SaveThePrincess.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NA7Q8886Q6;
+				INFOPLIST_FILE = SaveThePrincess/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Pierre-L7.SaveThePrincess";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7F2D5F6920D3E52900AE0635 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C7DC4324698892A395DDE70 /* Pods-SaveThePrincessTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NA7Q8886Q6;
+				INFOPLIST_FILE = SaveThePrincessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Pierre-L7.SaveThePrincessTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SaveThePrincess.app/SaveThePrincess";
+			};
+			name = Debug;
+		};
+		7F2D5F6A20D3E52900AE0635 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9155D59E0969B04183B72BFB /* Pods-SaveThePrincessTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NA7Q8886Q6;
+				INFOPLIST_FILE = SaveThePrincessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Pierre-L7.SaveThePrincessTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SaveThePrincess.app/SaveThePrincess";
+			};
+			name = Release;
+		};
+		7F2D5F6C20D3E52900AE0635 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E00CCED2CF795A818777BE8B /* Pods-SaveThePrincessUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NA7Q8886Q6;
+				INFOPLIST_FILE = SaveThePrincessUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Pierre-L7.SaveThePrincessUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SaveThePrincess;
+			};
+			name = Debug;
+		};
+		7F2D5F6D20D3E52900AE0635 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E9AA4D92D85B9719D59ACA9 /* Pods-SaveThePrincessUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NA7Q8886Q6;
+				INFOPLIST_FILE = SaveThePrincessUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Pierre-L7.SaveThePrincessUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SaveThePrincess;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F2D5F3520D3E52700AE0635 /* Build configuration list for PBXProject "SaveThePrincess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F2D5F6320D3E52900AE0635 /* Debug */,
+				7F2D5F6420D3E52900AE0635 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F2D5F6520D3E52900AE0635 /* Build configuration list for PBXNativeTarget "SaveThePrincess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F2D5F6620D3E52900AE0635 /* Debug */,
+				7F2D5F6720D3E52900AE0635 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F2D5F6820D3E52900AE0635 /* Build configuration list for PBXNativeTarget "SaveThePrincessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F2D5F6920D3E52900AE0635 /* Debug */,
+				7F2D5F6A20D3E52900AE0635 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F2D5F6B20D3E52900AE0635 /* Build configuration list for PBXNativeTarget "SaveThePrincessUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F2D5F6C20D3E52900AE0635 /* Debug */,
+				7F2D5F6D20D3E52900AE0635 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7F2D5F4420D3E52700AE0635 /* SaveThePrincess.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7F2D5F4520D3E52700AE0635 /* SaveThePrincess.xcdatamodel */,
+			);
+			currentVersion = 7F2D5F4520D3E52700AE0635 /* SaveThePrincess.xcdatamodel */;
+			path = SaveThePrincess.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7F2D5F3220D3E52700AE0635 /* Project object */;
+}
